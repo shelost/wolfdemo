@@ -1,0 +1,115 @@
+body {
+  font-family: Questrial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.routes {
+  margin: 1vw;
+}
+
+@media screen and (min-width: 700px) {
+  .header {
+    margin: 1vw;
+  }
+  .header h1 {
+    font-size: 3vw;
+  }
+  .header h2 {
+    font-size: 1.5vw;
+    opacity: 0.6;
+  }
+  .route {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 20vw;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    position: relative;
+    bottom: 0;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .route .slide {
+    background-color: #00AEFF;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    border-radius: 0.5vw;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .route:hover {
+    color: white;
+  }
+  .route:hover .slide {
+    width: 100%;
+  }
+  .route h1 {
+    font-size: 2vw;
+  }
+  .route h2 {
+    font-size: 1vw;
+    opacity: 0.6;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    margin: 3vw;
+  }
+  .header h1 {
+    font-size: 8vw;
+  }
+  .header h2 {
+    font-size: 5vw;
+    opacity: 0.6;
+  }
+  .header h3 {
+    font-size: 4vw;
+    opacity: 0.5;
+  }
+  .route {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    position: relative;
+    bottom: 0;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .route .slide {
+    background-color: #00AEFF;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    border-radius: 2vw;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .route:hover {
+    color: white;
+  }
+  .route:hover .slide {
+    width: 100%;
+  }
+  .route h1 {
+    font-size: 7vw;
+    margin: 3vw;
+  }
+  .route h2 {
+    font-size: 5vw;
+    opacity: 0.6;
+    margin: 3vw;
+  }
+}
+/*# sourceMappingURL=demo.css.map */

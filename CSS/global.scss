@@ -1,0 +1,214 @@
+$blue: #0083EA;
+$dark-sat: #1C61DA;
+$dark-nosat: #1C4397;
+$light-sat: #00BDFF;
+$light-nosat: #00BDFF;
+$dark-dark: #00193A;
+
+a{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+::selection{
+    background: black;
+    color: white;
+}
+
+body{
+    font-family: Questrial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.background{
+    background: linear-gradient(45deg,$dark-dark, $dark-nosat);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#wolf-logo{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    polygon{
+        opacity: 0.6;
+        border: 10px solid black;
+        transform-origin: center center;
+        transform: translate(0vw, 0vw);
+        transition: 0.1s ease;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    .eye{
+        opacity: 0.9;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    .navbar{
+        height: 4vw;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #img-mobile{
+        display: none;
+    }
+
+    .bubble{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($dark-dark, 0.8);
+        margin: 1vw;
+        height: 100%;
+        border-radius: 4vw;
+    }
+
+    #navfab{
+        display: hidden;
+    }
+
+    .navbtn{
+        margin: 2vw;
+        font-size: 0.8vw;
+        color: rgba(white, 0.8);
+        transition: 0.2s ease;
+        align-items: center;
+        &:hover{
+            color: rgba(white, 1);
+        }
+        img{
+            height: 4vw;
+            width: auto;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1080px){
+
+    .navbar{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0,0,0,0.9);
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 6vw;
+        transform: translateX(-100vw);
+        transition: 0.3s ease;
+        h1{
+            font-size: 6vw;
+        }
+    }
+
+    #wolf-logo{
+        opacity: 0.8;
+    }
+
+    #img-desktop{
+        display: none;
+    }
+
+    .hor-flex{
+        display: none;
+    }
+
+    #img-mobile{
+        width: 50vw;
+        background-color: rgba(0,0,0,0.4);
+        position: absolute;
+        border-radius: 10vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        top: 10vw;
+        left: 20vw;
+    }
+
+    .navbar-out{
+        transform: translateX(0);
+    }
+
+    #navfab{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 20;
+        width: 80px;
+        height: 80px;
+        border-radius: 60px;
+        background-color: $blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s ease;
+        div{
+            height: 7%;
+            width: 60%;
+            background-color: white;
+            opacity: 0.8;
+            margin: 4px;
+        }
+        &:hover{
+            background-color: $dark-sat;
+        }
+    }
+
+    .navbtn{
+        margin: 2vw;
+        font-size: 0.8vw;
+        color: rgba(white, 0.8);
+        background-color: rgba(255,255,255,0);
+        border-radius: 4vw;
+        padding: 0.1vw;
+        padding-right: 3vw;
+        padding-left: 3vw;
+        transition: 0.2s ease;
+        &:hover{
+            color: rgba(white, 1);
+            background-color: rgba(255,255,255,0.1);
+        }
+    }
+
+}

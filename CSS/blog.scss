@@ -1,0 +1,180 @@
+#wolf-logo{
+    opacity: 0.3;
+}
+
+@media screen and (min-width: 1080px){
+
+    .page{
+        width: 100vw;
+        margin-top: 10vw;
+        padding-bottom: 5vw;
+    }
+
+    .blog{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .text{
+        color: white;
+        font-size: 4vw;
+        text-shadow: 0px 5px 30px rgba(0,0,0,1);
+        margin: 3.5vw;
+    }
+
+    .banner{
+        background-size: 100%;
+    }
+
+    .post{
+        background-color: rgba(white, 0.8);
+        width: 30vw;
+        border-radius: 1vw;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.7);
+        margin: 1vw;
+        position: relative;
+        bottom: 0;
+        transition: 0.2s ease;
+        color: black;
+
+        .banner{
+            height: 20vw;
+            border-radius: 1vw 1vw 0 0;
+            background-color: black;
+        }
+
+        .info{
+            padding: 1vw;
+
+        }
+        h1{
+            font-size: 3vw;
+            margin-top: 1vw;
+        }
+        h2{
+            font-size: 1.3vw;
+            color: rgba(black, 0.7);
+        }
+        h3{
+            font-size: 1.5vw;
+        }
+        .date{
+            color: rgba(black, 0.7);
+        }
+
+        &:hover{
+            bottom: 10px;
+            background-color: rgba(white, 0.9);
+            box-shadow: 0px 20px 20px rgba(0,0,0,0.9);
+        }
+
+        &.featured{
+            width: 95vw;
+            display: flex;
+            height: 30vw;
+
+            .banner{
+                flex: 1;
+                border-radius: 1vw 0 0 1vw;
+                height: 100%;
+            }
+            .info{
+                flex: 1;
+                p{
+                    color: rgba(black, 0.7);
+                    font-size: 1vw;
+                    width: 95%;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1080px){
+
+    .page{
+        width: 95vw;
+        overflow-x: hidden;
+        margin: 0;
+        margin-top: 30vw;
+        padding-bottom: 5vw;
+    }
+
+    .blog{
+        display: flex;
+        width: 97vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text{
+        color: white;
+        font-size: 6vw;
+        text-align: center;
+        background-color: rgba(0,0,0,0.7);
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 4vw;
+        margin-top: 6vw;
+        padding: 4vw;
+        border-radius: 10vw;
+
+    }
+
+    .post{
+        background-color: rgba(white, 0.8);
+        width: 85vw;
+        border-radius: 3vw;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.7);
+        margin: 4vw;
+        position: relative;
+        bottom: 0;
+        transition: 0.2s ease;
+        color: black;
+
+        .banner{
+            height: 40vw;
+            border-radius: 3vw 3vw 0 0;
+            background-color: black;
+        }
+        &.featured{
+            .banner{
+                height: 60vw;
+            }
+        }
+
+        .info{
+            padding: 3vw;
+
+        }
+        h1{
+            font-size: 7vw;
+            margin-top: 1vw;
+        }
+        h2{
+            font-size: 4vw;
+            opacity: 0.7;
+        }
+        h3{
+            font-size: 4vw;
+        }
+        p{
+            font-size: 3vw;
+            opacity: 0.7;
+        }
+        .date{
+            opacity: 0.7;
+        }
+
+        &:hover{
+            bottom: 10px;
+            background-color: rgba(white, 0.9);
+            box-shadow: 0px 20px 20px rgba(0,0,0,0.9);
+        }
+
+    }
+
+}
