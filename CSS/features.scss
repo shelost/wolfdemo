@@ -222,6 +222,9 @@
 
 @media screen and (max-width: 1080px){
 
+  #sidebar{
+    display: none;
+  }
   @keyframes flicker {
     from {
       fill: gold;

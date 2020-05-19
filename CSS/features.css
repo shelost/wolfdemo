@@ -301,6 +301,9 @@
 }
 
 @media screen and (max-width: 1080px) {
+  #sidebar {
+    display: none;
+  }
   @-webkit-keyframes flicker {
     from {
       fill: gold;
