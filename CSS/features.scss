@@ -59,6 +59,7 @@
     margin-top: 10vw;
     overflow-x: hidden;
     width: 98vw;
+    overflow-y: hidden;
   }
 
   #sidebar{
@@ -329,6 +330,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    text-align: center;
     width: 90vw;
     margin: auto;
     padding: 1vw;
@@ -343,10 +345,10 @@
     }
     h2 {
       width: 100%;
-      font-size: 6vw;
+      font-size: 5vw;
       text-align: center;
       opacity: 0.6;
-      line-height: 7vw;
+      line-height: 6vw;
     }
   }
 

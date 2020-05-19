@@ -67,6 +67,7 @@
     margin-top: 10vw;
     overflow-x: hidden;
     width: 98vw;
+    overflow-y: hidden;
   }
   #sidebar {
     width: 4vw;
@@ -472,6 +473,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
+    text-align: center;
     width: 90vw;
     margin: auto;
     padding: 1vw;
@@ -486,10 +488,10 @@
   }
   .expo h2 {
     width: 100%;
-    font-size: 6vw;
+    font-size: 5vw;
     text-align: center;
     opacity: 0.6;
-    line-height: 7vw;
+    line-height: 6vw;
   }
   .expo-before {
     top: 140vw;
