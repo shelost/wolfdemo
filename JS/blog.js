@@ -83,8 +83,11 @@ setTimeout(()=> {
             sessionStorage.setItem('ID', item.id)
             location.href = 'article.html'
 
+
         }
     }
 
 },100)
+
+console.log(window.location.href)
 

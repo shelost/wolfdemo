@@ -3,6 +3,13 @@ let response =
 
 let post = JSON.parse(response)
 
+history.pushState({}, '', window.location.pathname.substring(0, window.location.pathname.length-12) + 'article.html?id=' + sessionStorage.getItem('ID'))
+
+var POST_ID = window.location.search.substring(4, window.location.search.length)
+
+// Eventually, the response will be based on POST_ID via an HTTP request
+// For now, POST_ID serves no purpose
+
 Class('page')[0].innerHTML =
     `
     <div class = 'header'>
