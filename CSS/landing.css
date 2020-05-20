@@ -85,7 +85,7 @@
     width: -moz-fit-content;
     width: fit-content;
     position: fixed;
-    top: 1vw;
+    top: -8vw;
     left: 35vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -98,6 +98,8 @@
     border-radius: 3vw;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
+    -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
   }
   .notification h1 {
     font-size: 2vw;
@@ -125,7 +127,7 @@
     outline: none;
   }
   .notif-active {
-    top: 4vw;
+    top: 1vw;
   }
 }
 

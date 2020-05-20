@@ -89,7 +89,7 @@ $dark-dark: #00193A;
     .notification{
         width: fit-content;
         position: fixed;
-        top: 1vw;
+        top: -8vw;
         left: 35vw;
         display: flex;
         align-items: center;
@@ -97,6 +97,7 @@ $dark-dark: #00193A;
         padding: 0.5vw;
         border-radius: 3vw;
         transition: 0.2s ease;
+        box-shadow: 0px 5px 20px rgba(black, 0.6);
 
         h1{
             font-size: 2vw;
@@ -124,7 +125,7 @@ $dark-dark: #00193A;
     }
 
     .notif-active{
-        top: 4vw;
+        top: 1vw;
     }
 }
 
