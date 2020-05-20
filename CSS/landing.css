@@ -80,6 +80,69 @@
     margin: 0;
     color: rgba(255, 255, 255, 0.5);
   }
+  .notification {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: fixed;
+    top: 1vw;
+    left: 35vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5vw;
+    border-radius: 3vw;
+  }
+  .notification h1 {
+    font-size: 2vw;
+    margin-left: 1vw;
+  }
+  .notification button {
+    color: white;
+    border: none;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #0083EA;
+    font-size: 1.5vw;
+    padding: 1vw;
+    margin-right: 0.5vw;
+    margin-left: 1vw;
+    border-radius: 2vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .notification button:hover {
+    background-color: #1C4397;
+  }
+  .notification button:focus {
+    outline: none;
+  }
+  .notif-active {
+    top: 4vw;
+  }
+}
+
+@-webkit-keyframes dropdown {
+  from {
+    top: -5vw;
+  }
+  to {
+    top: 2vw;
+  }
+}
+
+@keyframes dropdown {
+  from {
+    top: -5vw;
+  }
+  to {
+    top: 2vw;
+  }
 }
 
 @media screen and (max-width: 1080px) {
