@@ -96,6 +96,8 @@
     background-color: rgba(255, 255, 255, 0.7);
     padding: 0.5vw;
     border-radius: 3vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .notification h1 {
     font-size: 2vw;
