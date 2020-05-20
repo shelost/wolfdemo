@@ -120,5 +120,32 @@ function updateTimer(){
 
 }
 
+const IndexLoop = () => {
+
+    if (window.innerWidth > 800){
+
+        if (window.innerWidth/window.innerHeight > 2.2){
+            Class('page')[0].style.left = '15vw';
+            Class('page')[0].style.height = '80vh';
+            Class('page')[0].style.top = '15vh';
+            Class('big')[0].style.fontSize = '4vw'
+        }else{
+            Class('page')[0].style.left = '3vw';
+            Class('page')[0].style.height = '100vh';
+            Class('page')[0].style.top = '0vh';
+            Class('big')[0].style.fontSize = '5vw'
+        }
+    }else{
+        Class('page')[0].style.left = '0vw';
+        Class('page')[0].style.height = '100vh';
+        Class('page')[0].style.top = '100vh';
+    }
+
+}
+
+setInterval(IndexLoop, 10)
+
+console.log(window.innerWidth)
+
 
 var x = setInterval(updateTimer, 1000)

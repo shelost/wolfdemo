@@ -1,4 +1,4 @@
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 800px) {
   .page {
     width: 60vw;
     margin: auto;
@@ -74,7 +74,7 @@
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 800px) {
   #wolf-logo {
     display: none;
   }

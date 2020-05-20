@@ -62,17 +62,18 @@
   animation: scaling-mini 1s ease-in-out infinite alternate-reverse;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 800px) {
   .page {
+    margin: auto;
     margin-top: 10vw;
-    overflow-x: hidden;
+    overflow: hidden;
     width: 98vw;
-    overflow-y: hidden;
   }
   #sidebar {
     width: 4vw;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
     border-radius: 4vw;
     padding: 1vw;
     display: -webkit-box;
@@ -107,8 +108,9 @@
     top: calc(50vh - 13vw);
   }
   #sidebar-zone:hover #sidebar {
-    -webkit-transform: translateX(0vw);
-            transform: translateX(0vw);
+    -webkit-transform: translateX(0vw) scale(1);
+            transform: translateX(0vw) scale(1);
+    opacity: 1;
   }
   .sidebar-img {
     width: 100%;
@@ -121,9 +123,6 @@
   .sidebar-img:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
-    opacity: 1;
-  }
-  .sidebar-on {
     opacity: 1;
   }
   @-webkit-keyframes flicker {
@@ -190,6 +189,26 @@
               transform: translate(11.5vw, -42vw);
     }
   }
+  @-webkit-keyframes bounce-screen-scaled {
+    from {
+      -webkit-transform: translate(9vw, -40vw) scale(0.9);
+              transform: translate(9vw, -40vw) scale(0.9);
+    }
+    to {
+      -webkit-transform: translate(9vw, -42vw) scale(0.9);
+              transform: translate(9vw, -42vw) scale(0.9);
+    }
+  }
+  @keyframes bounce-screen-scaled {
+    from {
+      -webkit-transform: translate(9vw, -40vw) scale(0.9);
+              transform: translate(9vw, -40vw) scale(0.9);
+    }
+    to {
+      -webkit-transform: translate(9vw, -42vw) scale(0.9);
+              transform: translate(9vw, -42vw) scale(0.9);
+    }
+  }
   @-webkit-keyframes scaling {
     from {
       -webkit-transform: scale(1.1) translateY(-1vw);
@@ -231,15 +250,17 @@
     }
   }
   .graphic {
-    width: 40vw;
-    height: 40vw;
+    width: 40%;
+    height: 100%;
     margin: 1vw;
+    -webkit-transform: translateY(3vw);
+            transform: translateY(3vw);
   }
   .graphic svg {
     width: 100%;
     height: 100%;
   }
-  .graphic img {
+  .graphic .screen {
     width: 12vw;
     position: relative;
     -webkit-animation: bounce-screen 3s ease-in-out infinite alternate;
@@ -249,11 +270,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 94vw;
+    width: 95%;
+    padding-top: 2vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     margin: 0;
+    height: 40vw;
     margin-left: 3vw;
     margin-top: 3vw;
     margin-right: 3vw;
@@ -273,7 +299,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 10vw;
+    margin-bottom: 7%;
     text-align: center;
   }
   .expo img {
@@ -301,7 +327,7 @@
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 800px) {
   #sidebar {
     display: none;
   }
