@@ -37,6 +37,7 @@
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
     background-size: cover;
+    cursor: pointer;
     padding: 1.5vw;
     margin: 2vw;
     height: 100%;
@@ -91,6 +92,7 @@
   }
   .post {
     background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
     width: 30vw;
     border-radius: 1vw;
     -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
@@ -137,6 +139,9 @@
     display: -ms-flexbox;
     display: flex;
     height: 30vw;
+  }
+  .post.featured h1 {
+    font-size: 5vw;
   }
   .post.featured .banner {
     -webkit-box-flex: 1;

@@ -87,19 +87,19 @@ const loop = () => {
       poly.style.transform = `translate(${Math.floor(MX-CX)*0.003*q}px, ${Math.floor(MY-CY)*0.003*q}px) rotate3D(0,0,1,${b*angle*0.1}deg)`
 
 
-      if (window.innerWidth < 700){
+      if (window.innerWidth < 1080){
 
         if (up){
-            FY -= 0.5;
+            FY -= 0.3;
         }else{
-            FY += 0.5;
+            FY += 0.3;
         }
 
-        if (FY < CY -400){
+        if (FY < CY -200){
             up = false;
         }
 
-        if (FY > CY +400){
+        if (FY > CY +200){
             up = true;
         }
 
