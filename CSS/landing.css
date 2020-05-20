@@ -60,6 +60,26 @@
   .hor-flex button:hover {
     background-color: #1C61DA;
   }
+  #timer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #timer .timer-col {
+    margin: 1vw;
+    margin-left: 0;
+    margin-top: 3vw;
+    text-align: center;
+  }
+  #timer .timer-col h1 {
+    font-size: 3vw;
+    margin: 0.5vw;
+  }
+  #timer .timer-col h2 {
+    font-size: 1.5vw;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -140,6 +160,25 @@
   }
   .hor-flex button:hover {
     background-color: #1C61DA;
+  }
+  #timer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #timer .timer-col {
+    margin: 2vw;
+    margin-top: 3vw;
+    text-align: center;
+  }
+  #timer .timer-col h1 {
+    font-size: 8vw;
+    margin: 2vw;
+  }
+  #timer .timer-col h2 {
+    font-size: 4vw;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
   }
 }
 

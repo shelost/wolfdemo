@@ -1,4 +1,6 @@
 const Email = Id('email');
+const Timer = Id('timer');
+
 Email.addEventListener('mouseenter', () => {
     for (let i=0; i<Class('eye').length; i++){
         Class('eye')[i].style.fill = '#01FFFB';
@@ -54,3 +56,69 @@ function signup() {
     }, 400)
   }
 }
+
+// Set the date we're counting down to
+var countDownDate = new Date("May 30, 2020 00:00:00").getTime();
+
+updateTimer()
+
+function updateTimer(){
+
+    let now = new Date().getTime();
+
+    let distance = countDownDate - now;
+
+    let time = [
+        Math.floor(distance / (1000 * 60 * 60 * 24)),
+        Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+        Math.floor((distance % (1000 * 60)) / 1000)
+    ]
+
+    let template = ``;
+
+    for (let i=0; i<4; i++){
+
+        let label;
+
+        switch (i){
+            case 0:
+                label = 'Day';
+                if (time[0] != 1){
+                    label += 's'
+                }
+                break;
+            case 1:
+                label = 'Hour';
+                if (time[1] != 1){
+                    label += 's'
+                }
+                break;
+            case 2:
+                label = 'Minute';
+                if (time[2] != 1){
+                    label += 's'
+                }
+                break;
+            case 3:
+                label = 'Second';
+                if (time[3] != 1){
+                    label += 's'
+                }
+                break;
+        }
+        template +=
+            `
+            <div class = 'timer-col'>
+                <h1> ${time[i]} </h1>
+                <h2> ${label} </h2>
+            </div>
+            `
+    }
+
+    Timer.innerHTML = template;
+
+}
+
+
+var x = setInterval(updateTimer, 1000)
