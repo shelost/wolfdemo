@@ -53,6 +53,10 @@ function signup() {
   }
 }
 
+Id('ok').onclick = () => {
+    Class('notification')[0].classList.remove('notif-active')
+}
+
 // Set the date we're counting down to
 var countDownDate = new Date("May 30, 2020 00:00:00").getTime();
 
