@@ -40,7 +40,7 @@ function signup() {
     xhr.setRequestHeader('Content-Type', 'application/json')
     let code = window.location.search.split("code=")[1];
     xhr.send(JSON.stringify(code ? { email: email.value, referral: code } : { email: email.value }))
-    Class('notificaton')[0].classList.add('notif-active')
+    Class('notification')[0].classList.add('notif-active')
     setTimeout(() => {
         email.classList.remove('success')
     }, 1000)
