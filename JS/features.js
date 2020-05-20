@@ -71,6 +71,10 @@ const FeaturesLoop = () => {
         Class('page')[0].style.width = '100vw';
         for (let i=0; i<Class('screen').length; i++){
             Class('screen')[i].style.animation = 'bounce-screen 3s ease-in-out infinite alternate'
+            for (let i=0; i<Class('screen').length; i++){
+                Class('screen')[i].style.animation = 'bounce-screen 3s ease-in-out infinite alternate'
+                Class('graphic')[i].style.width = '90%'
+            }
         }
     }
 
