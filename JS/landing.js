@@ -139,6 +139,7 @@ const IndexLoop = () => {
         Class('page')[0].style.left = '0vw';
         Class('page')[0].style.height = '100vh';
         Class('page')[0].style.top = '100vh';
+        Class('big')[0].style.fontSize = '8vw'
     }
 
 }

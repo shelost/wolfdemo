@@ -32,6 +32,7 @@ a {
   }
   .banner {
     background-size: 100%;
+    background-repeat: no-repeat;
   }
   .archived {
     width: 26vw;
@@ -119,6 +120,7 @@ a {
     height: 20vw;
     border-radius: 1vw 1vw 0 0;
     background-color: black;
+    background-size: cover;
   }
   .post .info {
     padding: 1vw;
@@ -148,7 +150,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 30vw;
+    min-height: 30vw;
+    max-height: 50vw;
   }
   .post.featured h1 {
     font-size: 5vw;
@@ -287,6 +290,7 @@ a {
     height: 40vw;
     border-radius: 3vw 3vw 0 0;
     background-color: black;
+    background-size: cover;
   }
   .post.featured .banner {
     height: 60vw;

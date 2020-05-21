@@ -59,32 +59,19 @@ const loop = () => {
                 break;
         }
 
-        let a = 1;
         let b = 1;
 
         if (MX-CX > 0){
             b = 1;
-            if (MX-CY > 0){
-                a = -1
-            }else{
-                a = 1;
-            }
         }else{
             b = -1;
-            if (MX-CY > 0){
-                a = 1
-            }else{
-                a = -1;
-            }
         }
 
         let dist = Math.sqrt((MX-px)**2 + (MY-py)**2)
 
         let angle = (dist/700)*10
 
-   //   poly.style.transform = `translate(${Math.floor(MX-CX)*0.003*q}px, ${Math.floor(MY-CY)*0.003*q}px) rotate3D(1,${a},0,${b*angle}deg)`
-  //  poly.style.transform = `translate(${Math.floor(MX-CX)*0.003*q}px, ${Math.floor(MY-CY)*0.003*q}px)`
-      poly.style.transform = `translate(${Math.floor(MX-CX)*0.003*q}px, ${Math.floor(MY-CY)*0.003*q}px) rotate3D(0,0,1,${b*angle*0.1}deg)`
+        poly.style.transform = `translate(${Math.floor(MX-CX)*0.003*q}px, ${Math.floor(MY-CY)*0.003*q}px) rotate3D(0,0,1,${b*angle*0.1}deg)`
 
 
       if (window.innerWidth < 800){

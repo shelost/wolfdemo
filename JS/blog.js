@@ -20,6 +20,7 @@ for (let i=0; i< blogObject.length; i++){
 
         template =
         `
+        <a href = 'article.html?id=${post.id}'>
         <div class = 'post featured blog-item' id = ${post.id}>
             <div class = 'banner' style = 'background-image: url(${post.image})'>
             </div>
@@ -29,6 +30,7 @@ for (let i=0; i< blogObject.length; i++){
                 <h3 class = 'author'> ${post.author.fullName} <span class = 'date'> ${post.publishedAt.substring(0,10)} </span> </h3>
             </div>
          </div>
+         </a>
         `
         Content[0] += template
 
@@ -36,6 +38,7 @@ for (let i=0; i< blogObject.length; i++){
 
         template =
         `
+        <a href = 'article.html?id=${post.id}'>
         <div class = 'post blog-item' id = ${post.id}>
             <div class = 'banner' style = 'background-image: url(${post.image})'>
             </div>
@@ -45,6 +48,7 @@ for (let i=0; i< blogObject.length; i++){
                 <h3 class = 'author'> ${post.author.fullName} <span class = 'date'> ${post.publishedAt.substring(0,10)} </span> </h3>
             </div>
          </div>
+         </a>
         `
         Content[1] += template
 
@@ -52,6 +56,7 @@ for (let i=0; i< blogObject.length; i++){
 
         template =
         `
+        <a href = 'article.html?id=${post.id}'>
         <div class = 'archived blog-item' id = ${post.id} style = 'background-image: url(${post.image})'>
             <div class = 'card'>
                 <h1> ${post.title} </h1>
@@ -59,6 +64,7 @@ for (let i=0; i< blogObject.length; i++){
                 <h3> ${post.publishedAt.substring(0,10)} </h3>
             </div>
         </div>
+        </a>
         `
 
         Content[2] += template
