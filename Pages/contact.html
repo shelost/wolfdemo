@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Righteous|Raleway:wght@1,900;1,800|Questrial|Poppins|Varela&display=swap" rel="stylesheet">
     <link href = '../CSS/global.css' rel = 'stylesheet'>
-    <link href = '../CSS/about.css' rel = 'stylesheet'>
+    <link href = '../CSS/contact.css' rel = 'stylesheet'>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="../Assets/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="../Assets/favicon-16x16.png" />
@@ -24,6 +24,12 @@
       content="WOLF is an emerging FinTech application offering the delivery of streamlined financial data to new investors, customized portfolio optimization solutions powered by a proprietary investment analytics engine, and an interactive financial education platform."
     />
     <title> WOLF | Coming Soon </title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("user_Zba3TbavcsYUprEjDFy4K");
+      })();
+    </script>
 </head>
 
 <body>
@@ -61,11 +67,10 @@
         </div>
       </a>
       <a href = 'contact.html'>
-          <div class = 'navbtn'>
-              <h1> Contact </h1>
-          </div>
-        </a>
-
+        <div class = 'navbtn'>
+            <h1> Contact </h1>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -170,55 +175,37 @@
   <!-- GLOBAL UI (End) -->
 
   <!-- Actual content begins here -->
+
   <div class = 'page'>
 
-    <h1 class = 'text'> About WOLF </h1>
+    <!--
 
-    <div class = 'banner' style = 'background-image: url(../Assets/logo-2-T.png)' >
-      <p> WOLF’s platform was created to streamline in-depth information to beginner investors. Utilizing a comprehensive algorithm, we generate security analyses which incorporate both quantitative and qualitative data. These outputs display crucial stock information, industry comparisons, and top analyst opinions compiled in a manner anyone can understand.</p>
+    <div id = 'form'>
+      <input id = 'subject' type = 'text' placeholder="Subject">
+
+      <textarea id = 'body' placeholder="Voice your comments here..."></textarea>
+
+      <a href = 'mailto:shelost.off@gmail.com?subject=Test&body=hello' id = 'send'>
+        <div>
+            Send
+        </div>
+      </a>
     </div>
 
-    <h1 class = 'text'> Our Mission </h1>
+    -->
 
-    <div class = 'banner' style = 'background-image: url(../Assets/about-1-T.png)' >
-      <p> WOLF’s mission is to deliver coherent and high quality financial information to all investors. Our goal is to ensure beginners are able to make informed decisions leading to long-term financial freedom. </p>
-    </div>
+    <form action="https://formspree.io/shelost.off@gmail.com" method="POST">
+      <label>
+        Your email:
+        <input type="text" name="_replyto">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
 
-    <h1 class = 'text'> The Team </h1>
-
-    <div class = 'avatars'>
-
-      <div class = 'avatar'>
-        <img src = '../Assets/avatar-1.png'>
-        <div class = 'info'>
-            <h1> Full Name </h1>
-            <h2> Title </h2>
-        </div>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      </div>
-
-      <div class = 'avatar'>
-        <img src = '../Assets/avatar-2.png'>
-        <div class = 'info'>
-            <h1> Full Name </h1>
-            <h2> Title </h2>
-        </div>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      </div>
-
-      <div class = 'avatar'>
-        <img src = '../Assets/avatar-3.png'>
-        <div class = 'info'>
-            <h1> Full Name </h1>
-            <h2> Title </h2>
-        </div>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      </div>
-
-    </div>
 
   </div>
 
@@ -227,5 +214,5 @@
 </body>
 <script src="../JS/functions.js"></script>
 <script src="../JS/global.js"></script>
-
+<script src="../JS/contact.js"></script>
 </html>

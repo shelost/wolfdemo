@@ -5,6 +5,14 @@ $light-sat: #00BDFF;
 $light-nosat: #00BDFF;
 $dark-dark: #00193A;
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+*{
+    scrollbar-color:rgba(white, 0.7) black;
+    scrollbar-width: none;
+}
 
 @media screen and (min-width: 800px){
 
