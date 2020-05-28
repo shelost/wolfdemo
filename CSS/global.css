@@ -6,10 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-  width: 7px;
-}
-
 ::-webkit-scrollbar-track {
   background: #00193A;
 }
@@ -87,6 +83,9 @@ body {
 }
 
 @media screen and (min-width: 800px) {
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
   .navbar {
     height: 4vw;
     width: 100%;
@@ -146,6 +145,9 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
   .navbar {
     height: 100vh;
     width: 100vw;
@@ -226,14 +228,20 @@ body {
     transition: 0.2s ease;
   }
   #navfab div {
-    height: 7%;
+    height: 8%;
     width: 60%;
+    border-radius: 2px;
     background-color: white;
     opacity: 0.8;
     margin: 4px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   #navfab:hover {
     background-color: #1C61DA;
+  }
+  #navfab:hover div {
+    background-color: rgba(255, 255, 255, 0.8);
   }
   .navbtn {
     margin: 2vw;

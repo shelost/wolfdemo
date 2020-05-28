@@ -12,7 +12,7 @@
     }
     .page{
         margin-top: 10vw;
-
+        padding-bottom: 5vw;
     }
 
     .banner{
@@ -41,19 +41,24 @@
     .avatars{
         display: flex;
         flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
         margin-top: 6vw;
+        transform: translateX(1vw);
         justify-content: space-evenly;
         align-items: center;
     }
 
     .avatar{
-        width: 25vw;
+        width: 30vw;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 2vw;
         img{
             width: 100%;
+            border-radius: 20vw;
         }
         .info{
             background-color: #101010;
@@ -62,17 +67,17 @@
             padding-right: 3vw;
             border-radius: 1.5vw;
             margin: 1vw;
-            transform: translateY(-5vw);
+            transform: translateY(-2vw);
         }
         h1{
-            font-size: 2vw;
+            font-size: 1.8vw;
             margin: 0;
             margin-bottom: 0.5vw;
             color: white;
 
         }
         h2{
-            font-size: 1.5vw;
+            font-size: 1.2vw;
             margin: 0;
             color: rgba(white, 0.5);
 
@@ -85,7 +90,7 @@
             border-radius: 1vw;
             padding: 1vw;
             margin: 0;
-            transform: translateY(-5vw);
+            transform: translateY(-2vw);
         }
     }
 
@@ -107,22 +112,34 @@
             color: black;
         }
     }
+
+    .hor-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6vw;
+        img{
+            height: 150%;
+        }
+    }
 }
 
 @media screen and (max-width: 800px){
 
     .text{
         color: white;
-        font-size: 12vw;
+        font-size: 10vw;
         text-align: center;
-        margin: 4vw;
-        background-color: rgba(black, 0.6);
         padding: 4vw;
-        border-radius: 10vw;
+        border-radius: 4vw;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
     }
 
     .page{
-        margin-top: 40vw;
+        margin-top: 50vw;
 
     }
 
@@ -160,10 +177,11 @@
         align-items: center;
         img{
             width: 100%;
+            border-radius: 40vw;
         }
         .info{
             background-color: #101010;
-            padding: 3vw;
+            padding: 4vw;
             padding-left: 6vw;
             padding-right: 6vw;
             border-radius: 4vw;
@@ -171,14 +189,14 @@
             transform: translateY(-10vw);
         }
         h1{
-            font-size: 8vw;
+            font-size: 5vw;
             margin: 0;
-            margin-bottom: 0.5vw;
+            margin-bottom: 2vw;
             color: white;
 
         }
         h2{
-            font-size: 6vw;
+            font-size: 4vw;
             margin: 0;
             color: rgba(white, 0.5);
 
@@ -213,6 +231,21 @@
         }
         .highlight{
             color: black;
+        }
+    }
+
+    .hor-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6vw;
+        transform: translateX(-3vw);
+        margin-bottom: 8vw;
+        img{
+            height: 280%;
+            margin-left: -22vw;
+            transform: translateY(-0.4vw);
+            margin-right: 10vw;
         }
     }
 }

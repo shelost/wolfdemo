@@ -16,64 +16,180 @@ $dark-dark: #00193A;
 a{
     color: black;
 }
-.page{
-    width: 90vw;
-    margin: auto;
-    margin-top: 10vw;
-    background-color: rgba(black, 0.1);
+
+@media screen and (min-width: 800px){
+    .page{
+        width: 90vw;
+        margin: auto;
+        margin-top: 6vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5vw;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    input{
+        border: none;
+        font-size: 1.2vw;
+        background-color: rgba(white, 0.7);
+        padding: 1vw;
+        border-radius: 0.5vw;
+        width: 90%;
+        margin: 1vw;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background-color: rgba(white, 0.8);
+        }
+    }
+
+    textarea{
+        font-size: 1.2vw;
+        margin: 1vw;
+        margin-top: 0vw;
+        width: 90%;
+        height: 10vw;
+        background-color: rgba(white, 0.7);
+        resize: vertical;
+        padding: 1vw;
+        border-radius: 0.5vw;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background-color: rgba(white, 0.8);
+        }
+    }
+
+    .text{
+        color: white;
+        font-size: 6vw;
+        text-shadow: 0px 5px 30px rgba(0,0,0,0.5);
+        text-align: center;
+    }
+
+    .subtext{
+        color: rgba(white, 0.7);
+        font-size: 2.5vw;
+        text-shadow: 0px 5px 30px rgba(0,0,0,1);
+        text-align: center;
+        margin: 4vw;
+    }
+
+    button{
+        font-size: 1.2vw;
+        border: none;
+        color: white;
+        margin: 1vw;
+        margin-top: 0vw;
+        background-color: rgba($blue, 0.7);
+        padding: 1vw;
+        border-radius: 0.5vw;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background-color: rgba($light-nosat, 0.7);
+        }
+    }
+
 }
 
-#form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 800px){
+    .page{
+        width: 90vw;
+        margin: auto;
+        margin-top: 35vw;
+        position: relative;
+        left: 0.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10vw;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    input{
+        border: none;
+        font-size: 4vw;
+        background-color: rgba(white, 0.7);
+        padding: 3vw;
+        border-radius: 1.5vw;
+        width: 90%;
+        margin: 3vw;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background-color: rgba(white, 0.8);
+        }
+    }
+
+    textarea{
+        font-size: 4vw;
+        margin: 3vw;
+        margin-top: 0vw;
+        width: 90%;
+        height: 30vw;
+        background-color: rgba(white, 0.7);
+        resize: vertical;
+        padding: 3vw;
+        border-radius: 1.5vw;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background-color: rgba(white, 0.8);
+        }
+    }
+
+    .text{
+        color: white;
+        font-size: 10vw;
+        text-shadow: 0px 5px 30px rgba(0,0,0,0.5);
+        text-align: center;
+    }
+
+    .subtext{
+        color: rgba(white, 0.7);
+        font-size: 6vw;
+        text-shadow: 0px 5px 30px rgba(0,0,0,1);
+        text-align: center;
+        margin-bottom: 7vw;
+    }
+
+    button{
+        font-size: 4vw;
+        border: none;
+        color: white;
+        margin: 3vw;
+        margin-top: 0vw;
+        background-color: rgba($blue, 0.7);
+        padding: 3vw;
+        border-radius: 1.5vw;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background-color: rgba($light-nosat, 0.7);
+        }
+    }
+
 }
 
-input{
-    border: none;
-    font-size: 1.2vw;
-    background-color: rgba(white, 0.7);
-    padding: 1vw;
-    border-radius: 0.5vw;
-    width: 90%;
-    margin: 1vw;
-    &:focus{
-        outline: none;
-    }
-    &:hover{
-        background-color: rgba(white, 0.8);
-    }
-}
-
-textarea{
-    font-size: 1.2vw;
-    margin: 1vw;
-    margin-top: 0vw;
-    width: 90%;
-    height: 8vw;
-    background-color: rgba(white, 0.7);
-    resize: vertical;
-    padding: 1vw;
-    border-radius: 0.5vw;
-    &:focus{
-        outline: none;
-    }
-    &:hover{
-        background-color: rgba(white, 0.8);
-    }
-}
-
-#send{
-    font-size: 1.2vw;
-    margin: 1vw;
-    margin-top: 0vw;
-    background-color: rgba($blue, 0.7);
-    padding: 1vw;
-    border-radius: 0.5vw;
-    &:focus{
-        outline: none;
-    }
-    &:hover{
-        background-color: rgba($light-nosat, 0.7);
-    }
-}

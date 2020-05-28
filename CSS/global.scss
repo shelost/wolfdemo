@@ -13,9 +13,6 @@ html{
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-  width: 7px;
-}
 
 ::-webkit-scrollbar-track {
   background: $dark-dark;
@@ -79,6 +76,13 @@ body{
 }
 
 @media screen and (min-width: 800px){
+
+
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+
     .navbar{
         height: 4vw;
         width: 100%;
@@ -127,6 +131,13 @@ body{
 }
 
 @media screen and (max-width: 800px){
+
+
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+
 
     .navbar{
         height: 100vh;
@@ -191,14 +202,19 @@ body{
         align-items: center;
         transition: 0.2s ease;
         div{
-            height: 7%;
+            height: 8%;
             width: 60%;
+            border-radius: 2px;
             background-color: white;
             opacity: 0.8;
             margin: 4px;
+            transition: 0.2s ease;
         }
         &:hover{
             background-color: $dark-sat;
+            div{
+                background-color: rgba(white, 0.8);
+            }
         }
     }
 

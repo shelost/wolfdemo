@@ -10,8 +10,11 @@ a{
 
     .page{
         width: 100vw;
-        margin-top: 10vw;
+        margin-top: 5vw;
         padding-bottom: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .blog{
@@ -19,6 +22,12 @@ a{
         width: 99vw;
         justify-content: center;
         flex-wrap: wrap;
+        &.archives{
+            justify-content: left;
+            width: 95vw;
+            margin: auto;
+            transform: translateX(1vw);
+        }
     }
 
     .text{
@@ -27,6 +36,8 @@ a{
         text-shadow: 0px 5px 30px rgba(0,0,0,1);
         margin: 3.5vw;
         margin-top: 5vw;
+        width: 93%;
+        text-align: left;
     }
 
     .banner{
@@ -46,7 +57,6 @@ a{
         padding-right: 1.5vw;
         padding-top: 0.5vw;
         padding-bottom: 0.5vw;
-        margin: 2vw;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -66,6 +76,7 @@ a{
             border-radius: 0.5vw;
             height: 18vw;
             transition: 0.2s ease;
+            margin: 0;
         }
 
         h1{
@@ -87,6 +98,10 @@ a{
                 background-color: rgba(white, 0.9);
             }
         }
+    }
+
+    .arc{
+        margin-bottom: 3vw;
     }
 
     .post{
@@ -168,7 +183,7 @@ a{
         width: 95vw;
         overflow-x: hidden;
         margin: 0;
-        margin-top: 30vw;
+        margin-top: 35vw;
         padding-bottom: 5vw;
     }
 

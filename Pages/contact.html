@@ -51,15 +51,16 @@
           <h1>Home</h1>
         </div>
       </a>
-      <a href = 'about.html'>
-        <div class = 'navbtn'>
-          <h1> About </h1>
-        </div>
-      </a>
+
       <a href="features.html">
         <div class="navbtn">
           <h1>Features</h1>
         </div>
+      </a>
+      <a href = 'about.html'>
+          <div class = 'navbtn'>
+          <h1> About </h1>
+          </div>
       </a>
       <a href="blog.html">
         <div class="navbtn">
@@ -193,26 +194,33 @@
     </div>
 
     -->
+    <h1 class = 'text'> Contact Us </h1>
 
-    <form action="https://formspree.io/shelost.off@gmail.com" method="POST">
-      <label>
-        Your email:
-        <input type="text" name="_replyto">
-      </label>
-      <label>
-        Your message:
-        <textarea name="message"></textarea>
-      </label>
-      <button type="submit">Send</button>
+    <form action="https://formspree.io/support@wolf.financial" method="POST" aria-label ='form'>
+      <input type="email" name="_replyto" id = 'email' aria-label = 'email' placeholder = 'Your email...'>
+      <textarea name="message" id = 'message' aria-label = 'message' placeholder="Your message..."></textarea>
+      <button type="submit" id = 'submit'>Send</button>
     </form>
 
+    <h1 class = 'subtext'> Or Directly At </h1>
+
+    <a href='mailto:support@wolf.financial'>
+      <button>
+        support@wolf.financial
+      </button>
+    </a>
+
+    <!--
+    <a href='tel:607-279-2029'>
+      <button>
+        +1 (555) 555 5555
+      </button>
+    </a>
+    -->
 
   </div>
-
-
 
 </body>
 <script src="../JS/functions.js"></script>
 <script src="../JS/global.js"></script>
-<script src="../JS/contact.js"></script>
 </html>

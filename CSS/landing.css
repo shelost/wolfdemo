@@ -1,13 +1,12 @@
-::-webkit-scrollbar {
-  width: 0px;
-}
-
 * {
   scrollbar-color: rgba(255, 255, 255, 0.7) black;
   scrollbar-width: none;
 }
 
 @media screen and (min-width: 800px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
   .page {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -163,6 +162,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
   .page {
     display: -webkit-box;
     display: -ms-flexbox;
