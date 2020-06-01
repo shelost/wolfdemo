@@ -53,6 +53,8 @@
           transform-origin: center center;
   -webkit-animation: scaling 3s ease-in-out infinite alternate;
           animation: scaling 3s ease-in-out infinite alternate;
+  -webkit-filter: url("#blur");
+          filter: url("#blur");
 }
 
 .shadow-mini {
@@ -60,14 +62,18 @@
   -webkit-transform-origin: 80% 30%;
           transform-origin: 80% 30%;
   animation: scaling-mini 1s ease-in-out infinite alternate-reverse;
+  -webkit-filter: url("#blur");
+          filter: url("#blur");
 }
 
 @media screen and (min-width: 800px) {
   .page {
     margin: auto;
-    margin-top: 10vw;
+    margin-top: 5vw;
     overflow: hidden;
     width: 98vw;
+    position: relative;
+    right: 3vw;
     padding: 5vw;
   }
   #sidebar {
@@ -122,8 +128,8 @@
             transform-origin: center center;
   }
   .sidebar-img:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     opacity: 1;
   }
   @-webkit-keyframes flicker {
@@ -168,6 +174,26 @@
     to {
       -webkit-transform: translateY(-5vw);
               transform: translateY(-5vw);
+    }
+  }
+  @-webkit-keyframes bounce-small {
+    from {
+      -webkit-transform: translateY(0vw);
+              transform: translateY(0vw);
+    }
+    to {
+      -webkit-transform: translateY(-2vw);
+              transform: translateY(-2vw);
+    }
+  }
+  @keyframes bounce-small {
+    from {
+      -webkit-transform: translateY(0vw);
+              transform: translateY(0vw);
+    }
+    to {
+      -webkit-transform: translateY(-2vw);
+              transform: translateY(-2vw);
     }
   }
   @-webkit-keyframes bounce-screen {
@@ -300,6 +326,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-transform: translateY(-3vw);
+            transform: translateY(-3vw);
     margin-bottom: 7%;
     text-align: center;
   }
@@ -309,12 +337,27 @@
   .expo h1 {
     font-size: 5vw;
     margin: 0;
+    color: white;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .expo h2 {
     width: 50%;
     font-size: 1.5vw;
     line-height: 1.7vw;
     color: rgba(255, 255, 255, 0.7);
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .expo:hover h1 {
+    color: #66d7ff;
+  }
+  .expo:hover h2 {
+    color: #99e5ff;
+  }
+  .expo:hover img {
+    -webkit-animation: bounce-small 0.5s ease-in-out infinite alternate;
+            animation: bounce-small 0.5s ease-in-out infinite alternate;
   }
   #one {
     right: 2vw;
@@ -396,6 +439,26 @@
               transform: translate(32vw, -85vw);
     }
   }
+  @-webkit-keyframes bounce-small {
+    from {
+      -webkit-transform: translateY(0vw);
+              transform: translateY(0vw);
+    }
+    to {
+      -webkit-transform: translateY(-2vw);
+              transform: translateY(-2vw);
+    }
+  }
+  @keyframes bounce-small {
+    from {
+      -webkit-transform: translateY(0vw);
+              transform: translateY(0vw);
+    }
+    to {
+      -webkit-transform: translateY(-2vw);
+              transform: translateY(-2vw);
+    }
+  }
   @-webkit-keyframes scaling {
     from {
       -webkit-transform: scale(1.1) translateY(-5vw);
@@ -440,7 +503,7 @@
     overflow-x: hidden;
     width: 100vw;
     position: absolute;
-    top: 25vw;
+    top: 35vw;
     left: 0;
     right: 0;
     margin-bottom: -30vw;
@@ -481,7 +544,7 @@
   .sec-before {
     padding-bottom: 90vw;
     margin-top: 60vw;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
   }
   .expo {
     z-index: 2;
@@ -510,8 +573,13 @@
     position: relative;
   }
   .expo h1 {
-    font-size: 10vw;
+    font-size: 8vw;
     margin: 0;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    background-color: rgba(22, 77, 173, 0.5);
+    padding: 3vw;
+    border-radius: 4vw;
   }
   .expo h2 {
     width: 100%;
@@ -519,6 +587,11 @@
     text-align: center;
     opacity: 0.6;
     line-height: 6vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .expo:hover h1 {
+    background-color: rgba(22, 77, 173, 0.8);
   }
   .expo-before {
     top: 140vw;
@@ -539,5 +612,22 @@
   #two {
     bottom: 12vw;
   }
+}
+
+.light .expo img {
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
+}
+
+.light .expo h1 {
+  color: white;
+}
+
+.light .expo h2 {
+  color: black;
+}
+
+.light .expo:hover h1 {
+  color: #00BDFF;
 }
 /*# sourceMappingURL=features.css.map */

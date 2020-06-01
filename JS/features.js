@@ -1,5 +1,5 @@
-const Sidebar = Id('sidebar');
-const Icons = Class('sidebar-img');
+// const Sidebar = Id('sidebar');
+// const Icons = Class('sidebar-img');
 const Sections = Class('section');
 
 var y;
@@ -16,6 +16,7 @@ let t = 0;
 
 const FeaturesLoop = () => {
 
+    /*
     for (let i=0; i<Icons.length; i++){
         Icons[i].classList.remove('sidebar-on')
     }
@@ -43,6 +44,8 @@ const FeaturesLoop = () => {
             break;
     }
 
+    */
+
     if (window.innerWidth > 800){
 
         if (window.innerWidth/window.innerHeight > 2.2){
@@ -51,7 +54,7 @@ const FeaturesLoop = () => {
                 Class('screen')[i].style.animation = 'bounce-screen-scaled 3s ease-in-out infinite alternate'
                 Class('graphic')[i].style.width = '60%'
             }
-            Id('sidebar').style.transform = 'translateX(-1vw) scale(0.7)'
+           // Id('sidebar').style.transform = 'translateX(-1vw) scale(0.7)'
             t=0;
         }else{
             Class('page')[0].style.width = '95vw'
@@ -59,11 +62,13 @@ const FeaturesLoop = () => {
                 Class('screen')[i].style.animation = 'bounce-screen 3s ease-in-out infinite alternate'
                 Class('graphic')[i].style.width = '50%'
             }
+            /*
             if (t < 2){
                 Id('sidebar').style.transform = 'translateX(-5.5vw) scale(0.8)'
             }else{
                 Id('sidebar').style.transform = ''
             }
+            */
             t++;
         }
 

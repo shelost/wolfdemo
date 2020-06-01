@@ -1,0 +1,87 @@
+$blue: #0083EA;
+$dark-sat: #1C61DA;
+$dark-nosat: #1C4397;
+$light-sat: #00BDFF;
+$light-nosat: #00BDFF;
+$dark-dark: #00193A;
+
+#wolf-logo{
+    opacity: 0.4;
+}
+
+.background{
+    background: linear-gradient(45deg, $dark-nosat, $dark-nosat);
+}
+
+
+.page{
+    padding-bottom: 250vh;
+    img{
+        height: 5vw;
+        transform: translateY(1vw);
+    }
+}
+.display{
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.sec{
+    width: 30vw;
+    height: 30vw;
+    margin: 2vw;
+    transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        font-size: 2vw;
+        text-shadow: 0px 5px 20px rgba(black, 0.2);
+        &.title{
+            font-family: Raleway, sans-serif;
+            font-size: 5.5vw;
+        }
+    }
+    h2{
+        color: rgba(white, 0.5);
+        font-size: 1.5vw;
+        line-height: 1.8vw;
+    }
+}
+
+#left{
+    text-align: right;
+    background: linear-gradient(to left, rgba(white, 0.1), rgba(white, 0.05), rgba(white, 0));
+    padding-right: 4vw;
+    transform: translateX(3vw);
+}
+
+#right{
+    text-align: left;
+    background: linear-gradient(to right, rgba(white, 0.1), rgba(white, 0.05), rgba(white, 0));
+    padding-left: 4vw;
+    transform: translateX(-3vw);
+}
+
+#screen{
+    width: 22vw;
+    height: 44vw;
+    background-color: rgba(black, 0.8);
+    box-shadow: 0px 10px 30px rgba(black, 0.7);
+    border-radius: 2vw;
+    background-image: url('../Assets/screenshot-img-1.jpeg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #1C2039;
+    transition: 0.3s ease;
+    z-index: 2;
+}
+

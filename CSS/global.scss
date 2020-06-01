@@ -128,16 +128,21 @@ body{
             width: auto;
         }
     }
+
+    .light{
+        .bubble{
+            background-color: $dark-nosat;
+        }
+    }
+
+
 }
 
 @media screen and (max-width: 800px){
 
-
-
-::-webkit-scrollbar {
-    width: 3px;
-  }
-
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
 
     .navbar{
         height: 100vh;
@@ -231,6 +236,29 @@ body{
         &:hover{
             color: rgba(white, 1);
             background-color: rgba(255,255,255,0.1);
+        }
+    }
+
+}
+
+.light{
+
+    .background{
+        background: linear-gradient(45deg,$blue, $light-nosat);
+    }
+    #wolf-logo{
+        polygon{
+            opacity: 0.5;
+        }
+        .eye{
+            opacity: 1;
+        }
+    }
+
+    #navfab{
+        background-color: $dark-nosat;
+        &:hover{
+            background-color: darken($dark-nosat, 10%);
         }
     }
 

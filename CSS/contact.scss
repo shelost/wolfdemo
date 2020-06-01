@@ -193,3 +193,12 @@ a{
 
 }
 
+
+.light{
+    button{
+        background-color: $dark-nosat;
+        &:hover{
+            background-color: $dark-sat;
+        }
+    }
+}

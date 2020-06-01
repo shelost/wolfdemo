@@ -198,4 +198,12 @@ a {
     background-color: rgba(0, 189, 255, 0.7);
   }
 }
+
+.light button {
+  background-color: #1C4397;
+}
+
+.light button:hover {
+  background-color: #1C61DA;
+}
 /*# sourceMappingURL=contact.css.map */

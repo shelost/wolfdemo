@@ -46,7 +46,7 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 90%;
+    width: 70%;
     margin: auto;
     margin-top: 6vw;
     -webkit-transform: translateX(1vw);
@@ -59,7 +59,7 @@
             align-items: center;
   }
   .avatar {
-    width: 30vw;
+    width: 25vw;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -68,10 +68,13 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: top;
+        -ms-flex-pack: top;
+            justify-content: top;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
   }
   .avatar img {
     width: 100%;
@@ -84,11 +87,11 @@
     padding-right: 3vw;
     border-radius: 1.5vw;
     margin: 1vw;
-    -webkit-transform: translateY(-2vw);
-            transform: translateY(-2vw);
+    -webkit-transform: translateY(-4vw);
+            transform: translateY(-4vw);
   }
   .avatar h1 {
-    font-size: 1.8vw;
+    font-size: 1.4vw;
     margin: 0;
     margin-bottom: 0.5vw;
     color: white;

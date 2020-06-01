@@ -1,0 +1,104 @@
+#wolf-logo {
+  opacity: 0.4;
+}
+
+.background {
+  background: linear-gradient(45deg, #1C4397, #1C4397);
+}
+
+.page {
+  padding-bottom: 250vh;
+}
+
+.page img {
+  height: 5vw;
+  -webkit-transform: translateY(1vw);
+          transform: translateY(1vw);
+}
+
+.display {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: 7vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.sec {
+  width: 30vw;
+  height: 30vw;
+  margin: 2vw;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sec h1 {
+  font-size: 2vw;
+  text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sec h1.title {
+  font-family: Raleway, sans-serif;
+  font-size: 5.5vw;
+}
+
+.sec h2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5vw;
+  line-height: 1.8vw;
+}
+
+#left {
+  text-align: right;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.1)), color-stop(rgba(255, 255, 255, 0.05)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+  padding-right: 4vw;
+  -webkit-transform: translateX(3vw);
+          transform: translateX(3vw);
+}
+
+#right {
+  text-align: left;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), color-stop(rgba(255, 255, 255, 0.05)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+  padding-left: 4vw;
+  -webkit-transform: translateX(-3vw);
+          transform: translateX(-3vw);
+}
+
+#screen {
+  width: 22vw;
+  height: 44vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+  border-radius: 2vw;
+  background-image: url("../Assets/screenshot-img-1.jpeg");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #1C2039;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  z-index: 2;
+}
+/*# sourceMappingURL=page-alt.css.map */

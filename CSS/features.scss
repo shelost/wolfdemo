@@ -1,3 +1,10 @@
+$blue: #0083EA;
+$dark-sat: #1C61DA;
+$dark-nosat: #1C4397;
+$light-sat: #00BDFF;
+$light-nosat: #00BDFF;
+$dark-dark: #00193A;
+
 #wolf-logo {
   opacity: 0.3;
 }
@@ -39,17 +46,18 @@
   animation-delay: 600ms;
 }
 
-
 .shadow {
   opacity: 0.2;
   transform-origin: center center;
   animation: scaling 3s ease-in-out infinite alternate;
+  filter: url('#blur');
 }
 
 .shadow-mini {
   opacity: 0.2;
   transform-origin: 80% 30%;
   animation: scaling-mini 1s ease-in-out infinite alternate-reverse;
+  filter: url('#blur');
 }
 
 
@@ -57,9 +65,11 @@
 
   .page {
     margin: auto;
-    margin-top: 10vw;
+    margin-top: 5vw;
     overflow: hidden;
     width: 98vw;
+    position: relative;
+    right: 3vw;
     padding: 5vw;
   }
 
@@ -105,7 +115,7 @@
     transform-origin: center center;
 
     &:hover{
-      transform: scale(1.2);
+      transform: scale(1.1);
       opacity: 1;
     }
   }
@@ -128,6 +138,15 @@
     }
     to {
       transform: translateY(-5vw);
+    }
+  }
+
+  @keyframes bounce-small {
+    from {
+      transform: translateY(0vw);
+    }
+    to {
+      transform: translateY(-2vw);
     }
   }
 
@@ -203,6 +222,7 @@
     color: white;
     align-items: center;
     justify-content: center;
+    transform: translateY(-3vw);
     margin-bottom: 7%;
     text-align: center;
 
@@ -212,13 +232,28 @@
     h1 {
       font-size: 5vw;
       margin: 0;
+      color: white;
+      transition: 0.2s ease;
     }
     h2 {
       width: 50%;
       font-size: 1.5vw;
       line-height: 1.7vw;
       color: rgba(white, 0.7);
+      transition: 0.2s ease;
 
+    }
+
+    &:hover{
+      h1{
+        color: lighten($light-nosat, 20%);
+      }
+      h2{
+        color: lighten($light-nosat, 30%);
+      }
+      img{
+        animation: bounce-small 0.5s ease-in-out infinite alternate;
+      }
     }
   }
 
@@ -270,6 +305,15 @@
     }
   }
 
+  @keyframes bounce-small {
+    from {
+      transform: translateY(0vw);
+    }
+    to {
+      transform: translateY(-2vw);
+    }
+  }
+
   @keyframes scaling {
     from {
       transform: scale(1.1) translateY(-5vw);
@@ -293,7 +337,7 @@
     overflow-x: hidden;
     width: 100vw;
     position: absolute;
-    top: 25vw;
+    top: 35vw;
     left: 0;
     right: 0;
     margin-bottom: -30vw;
@@ -334,7 +378,7 @@
   .sec-before{
     padding-bottom: 90vw;
     margin-top: 60vw;
-    background-color: rgba(black, 0.3);
+    background-color: rgba(black, 0.2);
   }
 
   .expo {
@@ -355,8 +399,13 @@
       position: relative;
     }
     h1 {
-      font-size: 10vw;
+      font-size: 8vw;
       margin: 0;
+      transition: 0.2s ease;
+      background-color: rgba(darken($dark-sat, 10%), 0.5);
+      padding: 3vw;
+      border-radius: 4vw;
+
     }
     h2 {
       width: 100%;
@@ -364,6 +413,13 @@
       text-align: center;
       opacity: 0.6;
       line-height: 6vw;
+      transition: 0.2s ease;
+    }
+
+    &:hover{
+      h1{
+        background-color: rgba(darken($dark-sat, 10%), 0.8);
+      }
     }
   }
 
@@ -393,3 +449,22 @@
 }
 
 
+.light{
+  .expo{
+    img{
+      filter: brightness(0%);
+    }
+    h1{
+      color: white;
+    }
+    h2{
+      color: black;
+    }
+
+    &:hover{
+      h1{
+        color: $light-sat;
+      }
+    }
+  }
+}

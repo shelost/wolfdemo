@@ -476,4 +476,12 @@
             transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
+.light .big {
+  text-shadow: 0px 0px 60px #00193A;
+}
+
+.light h2 {
+  text-shadow: 0px 0px 40px #00193A;
+}
 /*# sourceMappingURL=landing.css.map */
